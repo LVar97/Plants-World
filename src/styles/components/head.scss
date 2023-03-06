@@ -1,0 +1,12 @@
+@import '~@app/styles/variables.scss';
+
+.head {
+	display: flex;
+	height: 90vh;
+	object-fit: cover;
+
+	&__image {
+		width: 60%;
+
+	}
+}

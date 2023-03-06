@@ -3,8 +3,48 @@
 .about {
 	display: flex;
 	flex-direction: column;
+	overflow: hidden;
 
 	&__title {
 		margin: $main-section-margin auto 30px;
+	}
+
+	&__text {
+		width: 40%;
+	}
+
+	&__content {
+		display: flex;
+		flex-wrap: wrap-reverse;
+		justify-content: space-between;
+	}
+
+	&__carousel-item {
+		margin: 0;
+		height: 400px;
+		width: 400px;
+		min-width: 300px;
+		color: $primary-color;
+		object-fit: cover;
+	}
+
+	&__carousel {
+		width: 50%;
+	}
+
+	@media screen and (max-width: $width-tablet) {
+		&__content {
+			display: flex;
+			flex-direction: column-reverse;
+		}
+
+		&__text {
+			width: 100%;
+			margin-bottom: 30px;
+		}
+
+		&__carousel {
+			width: 100%;
+		}
 	}
 }

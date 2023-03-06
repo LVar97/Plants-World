@@ -1,0 +1,94 @@
+@import '~@app/styles/variables.scss';
+
+.site-footer {
+	background: $primary-dark-color;
+
+	&__info-block {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		column-gap: 5vw;
+	}
+
+	&__copyright {
+		text-align: center;
+		margin: 20px auto;
+	}
+
+	@media screen and (max-width: $width-tablet) {
+		&__contacts-block {
+			grid-template-columns: none;
+		}
+	}
+}
+
+.drop-list {
+	&__list {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	&__title-block {
+		border: 0;
+		margin-bottom: 15px;
+		pointer-events: none;
+	}
+
+	&__arrow {
+		display: none;
+	}
+
+	&__link {
+		text-decoration: none;
+		color: white;
+	}
+
+	&__title {
+		text-transform: uppercase;
+	}
+
+	@media screen and (max-width: $width-tablet) {
+		position: relative;
+
+		&__title-block {
+			display: flex;
+			width: 100%;
+			justify-content: space-between;
+			border-bottom: 1px solid $primary-text-color;
+			padding-bottom: 3px;
+			cursor: pointer;
+			pointer-events: auto;
+		}
+
+		&__arrow {
+			display: block;
+			width: 20px;
+			height: 20px;
+			transition: transform 0.5s ease;
+		}
+
+		&__list {
+			visibility: hidden;
+			transition: visibility .5s, max-height .5s, padding-bottom .5s;
+			max-height: 0;
+			overflow: hidden;
+			padding-bottom: 0;
+
+			li {
+				padding-bottom: 10px;
+			}
+		}
+
+		&_active {
+			.drop-list__list {
+				visibility: visible;
+				max-height: 200px;
+				padding-bottom: 15px;
+			}
+
+			.drop-list__arrow {
+				transform: rotate(180deg);
+			}
+		}
+	}
+}

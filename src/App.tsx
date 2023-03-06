@@ -7,6 +7,7 @@ import {
 import Layout from 'antd/lib/layout';
 import { Header } from '@app/components/Header/Header';
 import { MainPages } from '@app/pages/MainPages';
+import { Footer } from '@app/components/Footer/Footer';
 
 export const App: React.FC = () => (
 	<div>
@@ -16,6 +17,7 @@ export const App: React.FC = () => (
 				<Routes>
 					<Route path="/" element={<MainPages />} />
 				</Routes>
+				<Footer />
 			</Layout>
 		</Router>
 	</div>

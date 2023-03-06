@@ -1,0 +1,45 @@
+@import '~@app/styles/variables.scss';
+
+.carousel-container {
+	position: relative;
+	display: flex;
+
+	.btn-left,
+	.btn-right {
+		cursor: pointer;
+		height: 30px;
+	}
+
+	.btn-left {
+		transform: rotate(90deg);
+	}
+
+	.btn-right {
+		transform: rotate(-90deg);
+	}
+}
+
+.ant-carousel {
+	width: 100%;
+	min-width: 300px;
+	height: 440px;
+
+	.slick-dots-bottom {
+		bottom: -30px;
+
+		li {
+			button {
+				border-radius: 50%;
+				width: 10px;
+				height: 10px;
+				background: $primary-color;
+			}
+		}
+
+		.slick-active {
+			button {
+				background: $primary-dark-color !important;
+			}
+		}
+	}
+}

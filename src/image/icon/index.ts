@@ -7,6 +7,8 @@ import cardSecurity from '@image/icon/card-security.svg';
 import delivery from '@image/icon/delivery.svg';
 import quarantee from '@image/icon/quarantee.svg';
 
+import expandArrow from '@image/icon/expand-arrow.svg';
+
 export {
 	heart,
 	bag,
@@ -16,4 +18,6 @@ export {
 	cardSecurity,
 	delivery,
 	quarantee,
+
+	expandArrow,
 }

@@ -3,21 +3,20 @@
 .advantages {
 	display: flex;
 	flex-direction: column;
+	background: $primary-dark-color;
+	padding-bottom: $main-section-margin;
 
 	&__title {
+		text-align: center;
 		margin: $main-section-margin auto 30px;
-	}
-
-	&__container {
-		background: $primary-dark-color;
 	}
 
 	&__content {
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: space-between;
+		justify-content: space-evenly;
 		align-items: center;
-		padding: 30px 0;
+		gap: 30px;
 	}
 
 	&__item {
@@ -34,5 +33,9 @@
 
 	&__subtitle {
 		margin: 15px 0;
+	}
+
+	&__text {
+		text-align: center;
 	}
 }

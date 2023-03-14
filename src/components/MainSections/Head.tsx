@@ -9,9 +9,12 @@ import head from '@image/mainSection/head.jpg';
 export const Head = () => {
 	return (
 		<div className="head">
-			<div className="container">
-				<h1>Plants World</h1>
-				<p>{HEAD_TEXT}</p>
+			<div className="head__container">
+				<h1 className="head__title">
+					<span>Plants</span><br/>
+					World
+				</h1>
+				<p className="head__subtitle">{HEAD_TEXT}</p>
 				<Button type={ButtonType.Fill}>Shop Now</Button>
 			</div>
 

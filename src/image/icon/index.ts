@@ -8,6 +8,7 @@ import delivery from '@image/icon/delivery.svg';
 import quarantee from '@image/icon/quarantee.svg';
 
 import expandArrow from '@image/icon/expand-arrow.svg';
+import rightArrow from '@image/icon/right-arrow.svg';
 
 export {
 	heart,
@@ -20,4 +21,5 @@ export {
 	quarantee,
 
 	expandArrow,
+	rightArrow,
 }

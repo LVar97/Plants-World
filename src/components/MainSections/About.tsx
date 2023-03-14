@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { ABOUT_TEXT } from '@app/vendor/texts';
+import { ABOUT_TEXT_I, ABOUT_TEXT_II, ABOUT_TEXT_III } from '@app/vendor/texts';
 import { Carousel } from '@app/components/UI/Carousel/Carousel';
 
 import '@app/styles/components/about.scss';
@@ -20,7 +20,11 @@ export const About: React.FC = () => {
 					<Carousel photos={images} itemClassName="about__carousel-item" />
 				</div>
 
-				<p className="about__text">{ABOUT_TEXT}</p>
+				<div className="about__text">
+					<p>{ABOUT_TEXT_I}</p>
+					<p className="about__text_margin">{ABOUT_TEXT_II}</p>
+					<p>{ABOUT_TEXT_III}</p>
+				</div>
 			</div>
 		</section>
 	);

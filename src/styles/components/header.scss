@@ -1,7 +1,9 @@
 @import '~@app/styles/variables.scss';
 
+$header-height: 80px;
+
 .site-header {
-	position: sticky;
+	position: relative;
 	z-index: 3;
 	background-color: $primary-dark-color;
 	color: $primary-text-color;
@@ -10,7 +12,7 @@
 		0px 4px 5px 0px rgb(0 0 0 / 14%),
 		0px 1px 10px 0px rgb(0 0 0 / 12%);
 	width: 100%;
-	height: 80px;
+	height: $header-height;
 
 	&__container,
 	&__box {
@@ -20,6 +22,7 @@
 
 	&__container {
 		justify-content: space-between;
+		z-index: 3;
 	}
 
 	&__logo {
@@ -45,4 +48,58 @@
 			color: $primary-light-color;
 		}
 	}
+
+	&__dropdown {
+		display: flex;
+		transition: all .5s linear;
+		position: absolute;
+		top: -50px;
+		right: 0;
+		width: 100%;
+
+		min-height: 60px;
+		height: fit-content;
+		z-index: 1;
+		background-color: $primary-color;
+	}
+
+	&__dropdown-container {
+		display: flex;
+		align-items: center;
+		padding: 20px 0;
+		gap: 30px;
+
+		a {
+			color: $primary-text-color;
+			font-size: 16px;
+		}
+	}
+
+	a, p {
+		color: $primary-text-color;
+		font-size: 16px;
+	}
+
+	&__dropdown-label {
+		display: flex;
+		align-items: center;
+		cursor: pointer;
+
+		img {
+			width: 20px;
+			margin-left: 7px;
+		}
+
+		.dropdown-btn {
+			transition: all .4s ease-in-out;
+
+			&_open {
+				transform: rotate(180deg);
+			}
+		}
+	}
+}
+
+.open-site-menu {
+	top: $header-height;
 }

@@ -26,9 +26,9 @@ const advantages = [
 export const Advantages: React.FC = () => {
 	return (
 		<section className="advantages">
-			<h2 className="advantages__title title">Our advantages</h2>
-			<div className="advantages__container">
-				<div className="advantages__content container">
+			<div className="advantages__container container">
+				<h2 className="advantages__title title">Our advantages</h2>
+				<div className="advantages__content">
 					{advantages.map((item) => (
 						<div className="advantages__item">
 							<img src={item.icon} alt={`${item.title} icon`} className="advantages__icon" />

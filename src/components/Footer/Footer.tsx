@@ -40,12 +40,12 @@ const DropList: React.FC<DropListProps> = ({ list, title }: DropListProps) => {
 	return (
 		<div className={clsx('drop-list', isVisible && 'drop-list_active')}>
 			<div className="drop-list__title-block" onClick={() => setIsVisible(!isVisible)}>
-				<h4 className="drop-list__title">{title}</h4>
+				<h4 className="drop-list__title text-size_medium">{title}</h4>
 				<img src={expandArrow} className="drop-list__arrow" />
 			</div>
 			<ul className="drop-list__list">
 				{list.map((item) => (
-					<li key={item.title}>
+					<li key={item.title} className="text-size_small">
 						{item.title}
 					</li>
 				))}
@@ -66,7 +66,7 @@ export const Footer: React.FC = () => {
 
 				</div>
 			</div>
-			<p className="site-footer__copyright">
+			<p className="site-footer__copyright text-size_small">
 				&copy; {moment().format('YYYY')} Karelina Varvara
 			</p>
 		</footer>

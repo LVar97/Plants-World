@@ -20,7 +20,7 @@ export const About: React.FC = () => {
 					<Carousel photos={images} itemClassName="about__carousel-item" />
 				</div>
 
-				<div className="about__text">
+				<div className="about__text text-size_medium">
 					<p>{ABOUT_TEXT_I}</p>
 					<p className="about__text_margin">{ABOUT_TEXT_II}</p>
 					<p>{ABOUT_TEXT_III}</p>

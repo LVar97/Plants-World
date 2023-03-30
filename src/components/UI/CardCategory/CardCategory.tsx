@@ -13,7 +13,7 @@ export const CardCategory: React.FC<CardCategoryProps> = ({title, image, link}: 
 	return (
 		<Link to={link} className="card-category">
 			<img src={image} alt={title} className="card-category__image" />
-			<p className="card-category__title">{title}</p>
+			<p className="card-category__title text-size_medium-m">{title}</p>
 		</Link>
 	);
 };

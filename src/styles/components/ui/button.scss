@@ -4,6 +4,7 @@
 	color: $primary-text-color;
 	border: none;
 	padding: 0;
+	cursor: pointer;
 
 	&_link {
 		background: transparent;
@@ -11,7 +12,7 @@
 
 	&_fill {
 		background-color: $primary-color;
-		padding: 10px 25px;
+		padding: 15px 60px;
 		border-radius: 50px;
 	}
 }

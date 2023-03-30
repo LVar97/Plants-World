@@ -18,7 +18,7 @@ export const Button: React.FC<IButton> = ({children, type, onClick}: IButton) =>
 	<button
 		type="button"
 		onClick={onClick}
-		className={clsx('btn', type === ButtonType.Link ? 'btn_link' : 'btn_fill')}
+		className={clsx('btn text-size_medium-s', type === ButtonType.Link ? 'btn_link' : 'btn_fill')}
 	>
 		{children}
 	</button>

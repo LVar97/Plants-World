@@ -33,7 +33,7 @@ export const Advantages: React.FC = () => {
 						<div className="advantages__item">
 							<img src={item.icon} alt={`${item.title} icon`} className="advantages__icon" />
 							<h4 className="advantages__subtitle">{item.title}</h4>
-							<p className="advantages__text">{item.text}</p>
+							<p className="advantages__text text-size_medium">{item.text}</p>
 						</div>
 					))}
 				</div>

@@ -36,9 +36,9 @@ export const Blog: React.FC = () => (
 			{articles.map((item) => (
 				<a className="blog__card" href={item.link}>
 					<img src={item.image} alt="" className="blog__img" />
-					<h4 className="blog__card-title">{item.title}</h4>
-					<p className="blog__text">{item.text}</p>
-					<Link to={item.link} className="blog__link">
+					<h4 className="blog__card-title text-size_medium">{item.title}</h4>
+					<p className="blog__text text-size_small">{item.text}</p>
+					<Link to={item.link} className="blog__link text-size_medium">
 						Read
 						<img src={rightArrow} />
 					</Link>

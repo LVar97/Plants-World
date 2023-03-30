@@ -57,7 +57,7 @@ export const Header = () => {
 			</header>
 			<div className={clsx('navigate__dropdown', open && 'open-site-menu')}>
 				<div className="container navigate__dropdown-container">
-					{shopItems.map((item) => <div key={item.key}>{item.label}</div>)}
+					{shopItems.map((item) => <p key={item.key} className="text-size_small">{item.label}</p>)}
 				</div>
 			</div>
 		</>

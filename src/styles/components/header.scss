@@ -65,19 +65,18 @@ $header-height: 80px;
 
 	&__dropdown-container {
 		display: flex;
+		flex-wrap: wrap;
 		align-items: center;
 		padding: 20px 0;
 		gap: 30px;
 
 		a {
 			color: $primary-text-color;
-			font-size: 16px;
 		}
 	}
 
 	a, p {
 		color: $primary-text-color;
-		font-size: 16px;
 	}
 
 	&__dropdown-label {

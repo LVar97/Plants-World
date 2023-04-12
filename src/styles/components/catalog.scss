@@ -1,0 +1,20 @@
+@import '~@app/styles/variables.scss';
+
+.catalog {
+	text-align: center;
+
+	&__breadcrumb {
+		margin-top: 30px;
+	}
+
+	&__title {
+		margin: 20px 0 40px;
+	}
+
+	&__product-list-wrap {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -20px 40px;
+		row-gap: 30px;
+	}
+}

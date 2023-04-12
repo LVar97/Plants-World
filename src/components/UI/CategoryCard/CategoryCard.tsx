@@ -1,15 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import '@app/styles/components/ui/cardCategory.scss';
+import '@app/styles/components/ui/categoryCard.scss';
 
-interface CardCategoryProps {
+interface CategoryCardProps {
 	title: string;
 	image: string; 
 	link: string;
 }
 
-export const CardCategory: React.FC<CardCategoryProps> = ({title, image, link}: CardCategoryProps) => {
+export const CategoryCard: React.FC<CategoryCardProps> = ({title, image, link}: CategoryCardProps) => {
 	return (
 		<Link to={link} className="card-category">
 			<img src={image} alt={title} className="card-category__image" />

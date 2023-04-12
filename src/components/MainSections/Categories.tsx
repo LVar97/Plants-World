@@ -1,6 +1,6 @@
 import React from 'react';
 import { ICategory } from '@app/objects/Category';
-import { CardCategory } from '@app/components/UI/CardCategory/CardCategory';
+import { CategoryCard } from '@app/components/UI/CategoryCard/CategoryCard';
 
 import '@app/styles/components/categories.scss';
 import indoor from '@image/mainSection/indoor.jpg';
@@ -31,7 +31,7 @@ export const Categories: React.FC = () => {
 		<section className="categories container">
 			<h2 className="categories__title title">Categories</h2>
 			<div className="categories__list">
-				{categories.map((item: ICategory) => <CardCategory {...item} />)}
+				{categories.map((item: ICategory) => <CategoryCard {...item} />)}
 			</div>
 		</section>
 	);

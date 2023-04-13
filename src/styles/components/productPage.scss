@@ -1,0 +1,83 @@
+@import '~@app/styles/variables.scss';
+
+.product-page {
+	margin: $page-margin 0 0;
+
+	&__back-btn {
+		transform: rotate(180deg);
+		margin-bottom: $page-margin;
+	}
+
+	&__general-block {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__carousel {
+		width: 45%;
+	}
+
+	&__general-info {
+		display: flex;
+		flex-direction: column;
+		row-gap: 30px;
+		width: 45%;
+	}
+
+	&__distribution {
+		display: flex;
+		align-items: center;
+
+		img {
+			width: 25px;
+		}
+	}
+
+	&__conditions-block {
+		display: flex;
+	}
+
+	&__conditions-list {
+		padding: 0;
+		list-style: none;
+		display: flex;
+		flex-direction: column;
+    align-items: center;
+    justify-content: center;
+		width: 37%;
+    margin-left: 9vw;
+		row-gap: 25px;
+
+		li {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+
+			img {
+				width: 30px;
+				margin-bottom: 10px;
+			}
+		}
+	}
+
+	&__conditions-img {
+		width: 45%;
+		height: 750px;
+		object-fit: cover;
+	}
+
+	&__carousel {
+		height: 650px;
+	}
+
+	&__carousel-item {
+		height: 600px;
+		object-fit: cover;
+	}
+
+	&__record {
+		margin: 15px auto 30px;
+		width: fit-content;
+	}
+}

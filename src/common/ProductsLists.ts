@@ -28,3 +28,13 @@ export const indoorList = [
 		cost: 40,
 	}
 ];
+
+export const outdoorList =  [
+	{
+		id: 223,
+		link:	'',
+		image: '',
+		title: '',
+		cost: 70,
+	},
+];

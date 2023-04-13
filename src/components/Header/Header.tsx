@@ -15,12 +15,12 @@ interface IMenuItems {
 
 const shopItems: Array<IMenuItems> = [
 	{
-		label: <Link to="/indoor-plants">Indoor Plants</Link>,
-		key: 'indoor-plants',
+		label: <Link to="/indoor-plant">Indoor Plants</Link>,
+		key: 'indoor-plant',
 	},
 	{
-		label: <Link to="/outdoor-plants">Outdoor Plants</Link>,
-		key: 'outdoor-plants',
+		label: <Link to="/outdoor-plant">Outdoor Plants</Link>,
+		key: 'outdoor-plant',
 	},
 	{
 		label: <Link to="/seeds">Seeds</Link>,
@@ -48,7 +48,9 @@ export const Header = () => {
 			<header className="site-header">
 				<div className="container site-header__container">
 					<div className="site-header__box">
-						<img src={logo} alt="Plants World" className="site-header__logo" />
+						<Link to="/">
+							<img src={logo} alt="Plants World" className="site-header__logo" />
+						</Link>
 						<Navigate onOpen={setOpen} open={open} />
 					</div>
 					

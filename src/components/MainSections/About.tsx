@@ -10,7 +10,7 @@ import one from '@image/mainSection/aboutCarousel/showcase.jpg';
 import four from '@image/mainSection/aboutCarousel/people.jpg';
 import five from '@image/mainSection/aboutCarousel/restaurant.jpg';
 
-const images = [ one, two, three, four, five ];
+const images = [one, two, three, four, five];
 export const About: React.FC = () => {
 	return (
 		<section className="about container">

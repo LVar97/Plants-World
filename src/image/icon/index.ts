@@ -34,4 +34,4 @@ export {
 	globe,
 	termo,
 	paw,
-}
+};

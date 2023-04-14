@@ -14,7 +14,7 @@ interface IButton {
 	type?: ButtonType;
 }
 
-export const Button: React.FC<IButton> = ({children, type, onClick}: IButton) => (
+export const Button: React.FC<IButton> = ({ children, type, onClick }: IButton) => (
 	<button
 		type="button"
 		onClick={onClick}
@@ -22,4 +22,4 @@ export const Button: React.FC<IButton> = ({children, type, onClick}: IButton) =>
 	>
 		{children}
 	</button>
-)
+);

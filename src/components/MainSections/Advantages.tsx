@@ -20,7 +20,7 @@ const advantages = [
 		icon: cardSecurity,
 		title: 'Secure payment',
 		text: SECURE_TEXT,
-	}
+	},
 ];
 
 export const Advantages: React.FC = () => {
@@ -30,7 +30,7 @@ export const Advantages: React.FC = () => {
 				<h2 className="advantages__title title">Our advantages</h2>
 				<div className="advantages__content">
 					{advantages.map((item) => (
-						<div className="advantages__item">
+						<div className="advantages__item" key={item.icon}>
 							<img src={item.icon} alt={`${item.title} icon`} className="advantages__icon" />
 							<h4 className="advantages__subtitle">{item.title}</h4>
 							<p className="advantages__text text-size_medium">{item.text}</p>

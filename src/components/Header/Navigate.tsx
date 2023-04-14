@@ -1,7 +1,7 @@
 import React from 'react';
+import clsx from 'clsx';
 
 import { expandArrow } from '@image/icon/index';
-import clsx from 'clsx';
 
 interface NavigateProps {
 	open: boolean;
@@ -13,10 +13,8 @@ export const Navigate: React.FC<NavigateProps> = (props: NavigateProps) => {
 		<nav className="navigate text-size_small">
 			<div className="navigate__dropdown-label" onClick={() => props.onOpen(!props.open)}>
 				<p>Catalog</p>
-				<img src={expandArrow} className={clsx('dropdown-btn', props.open && 'dropdown-btn_open')} />
+				<img src={expandArrow} alt="Arrow" className={clsx('dropdown-btn', props.open && 'dropdown-btn_open')} />
 			</div>
-			
-
 			<a>About</a>
 			<a>Information</a>
 			<a>Contact</a>

@@ -1,3 +1,5 @@
+/* eslint-disable sonarjs/no-duplicate-string */
+/* eslint-disable max-len */
 export const indoorList = [
 	{
 		id: 323,
@@ -26,10 +28,10 @@ export const indoorList = [
 		image: 'https://images.unsplash.com/photo-1597055181321-71de4e5ec627?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80',
 		title: 'Calathea lancifolia',
 		cost: 40,
-	}
+	},
 ];
 
-export const outdoorList =  [
+export const outdoorList = [
 	{
 		id: 223,
 		link:	'',

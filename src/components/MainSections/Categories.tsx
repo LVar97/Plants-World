@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { ICategory } from '@app/objects/Category';
 import { CategoryCard } from '@app/components/UI/CategoryCard/CategoryCard';
 
@@ -31,7 +32,7 @@ export const Categories: React.FC = () => {
 		<section className="categories container">
 			<h2 className="categories__title title">Categories</h2>
 			<div className="categories__list">
-				{categories.map((item: ICategory) => <CategoryCard {...item} />)}
+				{categories.map((item: ICategory) => <CategoryCard key={item.image} {...item} />)}
 			</div>
 		</section>
 	);

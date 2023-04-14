@@ -1,11 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
+import { rightArrow } from '@app/image/icon';
 
 import blogI from '@image/mainSection/blog-1.jpg';
 import blogII from '@image/mainSection/blog-2.jpg';
 import blogIII from '@image/mainSection/blog-3.jpg';
-import { Link } from 'react-router-dom';
 
-import { rightArrow } from '@app/image/icon';
 import '@app/styles/components/blog.scss';
 
 const articles = [
@@ -34,13 +35,13 @@ export const Blog: React.FC = () => (
 		<h2 className="blog__title title">Blog</h2>
 		<div className="blog__list">
 			{articles.map((item) => (
-				<a className="blog__card" href={item.link}>
+				<a className="blog__card" href={item.link} key={item.link}>
 					<img src={item.image} alt="" className="blog__img" />
 					<h4 className="blog__card-title text-size_medium">{item.title}</h4>
 					<p className="blog__text text-size_small">{item.text}</p>
 					<Link to={item.link} className="blog__link text-size_medium">
 						Read
-						<img src={rightArrow} />
+						<img src={rightArrow} alt="Arrow" />
 					</Link>
 				</a>
 			))}

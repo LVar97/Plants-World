@@ -19,7 +19,7 @@ const company = [
 	{
 		title: 'Contact',
 		link: '',
-	}
+	},
 ];
 
 const info = [
@@ -41,7 +41,7 @@ const DropList: React.FC<DropListProps> = ({ list, title }: DropListProps) => {
 		<div className={clsx('drop-list', isVisible && 'drop-list_active')}>
 			<div className="drop-list__title-block" onClick={() => setIsVisible(!isVisible)}>
 				<h4 className="drop-list__title text-size_medium">{title}</h4>
-				<img src={expandArrow} className="drop-list__arrow" />
+				<img src={expandArrow} alt="Arrow" className="drop-list__arrow" />
 			</div>
 			<ul className="drop-list__list">
 				{list.map((item) => (
@@ -61,9 +61,6 @@ export const Footer: React.FC = () => {
 				<div className="site-footer__info-block">
 					<DropList list={company} title="Company" />
 					<DropList list={info} title="Information" />
-				</div>
-				<div className="site-footer__social-block">
-
 				</div>
 			</div>
 			<p className="site-footer__copyright text-size_small">

@@ -3,10 +3,11 @@ import { Link } from 'react-router-dom';
 
 import clsx from 'clsx';
 
-import logo from '@image/logo.svg';
 import '@app/styles/components/header.scss';
 import { Navigate } from '@app/components/Header/Navigate';
 import { ServiceNavigate } from '@app/components/Header/ServiceNavigate';
+
+import logo from '@image/logo.svg';
 
 interface IMenuItems {
 	label: React.ReactNode;
@@ -37,7 +38,7 @@ const shopItems: Array<IMenuItems> = [
 	{
 		label: <Link to="/sale">Sale</Link>,
 		key: 'sale',
-	}
+	},
 ];
 
 export const Header = () => {
@@ -53,7 +54,7 @@ export const Header = () => {
 						</Link>
 						<Navigate onOpen={setOpen} open={open} />
 					</div>
-					
+
 					<ServiceNavigate />
 				</div>
 			</header>

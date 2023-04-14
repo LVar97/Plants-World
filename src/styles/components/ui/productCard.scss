@@ -1,7 +1,7 @@
 @import '~@app/styles/variables.scss';
 
 .product-card {
-	width: calc(100%/3 - 40px);
+	width: calc(100%/5 - 40px);
 	margin: 10px 20px;
 	text-align: center;
 	position: relative;
@@ -23,6 +23,7 @@
 		width: 100%;
 		height: fit-content;
 		object-fit: contain;
+		border-radius: 8px;
 	}
 
 	&__text-block {
@@ -32,11 +33,19 @@
 		margin: 10px 0 15px;
 	}
 
-	@media screen and (max-width: $width-tablet-md) {
+	@media screen and (max-width: $width-laptop--md) {
+		width: calc(100%/4 - 40px);
+	}
+
+	@media screen and (max-width: $width-laptop--sm) {
+		width: calc(100%/3 - 40px);
+	}
+
+	@media screen and (max-width: $width-tablet) {
 		width: calc(100%/2 - 40px);
 	}
 
-	@media screen and (max-width: $width-tablet-md) {
-		width: calc(100%/2 - 40px);
+	@media screen and (max-width: $width-mobile-lg) {
+		width: calc(100%/1 - 40px);
 	}
 }

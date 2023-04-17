@@ -3,7 +3,7 @@ import React from 'react';
 import { ICategory } from '@app/objects/Category';
 import { CategoryCard } from '@app/components/UI/CategoryCard/CategoryCard';
 
-import '@app/styles/components/categories.scss';
+import '@app/scss/components/categories.scss';
 import indoor from '@image/mainSection/indoor.jpg';
 import outdoor from '@image/mainSection/outdoor.jpg';
 

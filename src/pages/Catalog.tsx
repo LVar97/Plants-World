@@ -4,7 +4,7 @@ import Breadcrumb from 'antd/es/breadcrumb';
 
 import { IProduct } from '@app/objects/Product';
 import { ProductCard } from '@app/components/UI/ProductCard/ProductCard';
-import '@app/styles/components/catalog.scss';
+import '@app/scss/components/catalog.scss';
 
 import { useBreadCrumb } from '@app/hooks/useBreadCrumb';
 

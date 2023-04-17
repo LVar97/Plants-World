@@ -3,7 +3,7 @@ import React from 'react';
 import { ABOUT_TEXT_I, ABOUT_TEXT_II, ABOUT_TEXT_III } from '@app/vendor/texts';
 import { Carousel } from '@app/components/UI/Carousel/Carousel';
 
-import '@app/styles/components/about.scss';
+import '@app/scss/components/about.scss';
 import three from '@image/mainSection/aboutCarousel/room1.jpg';
 import two from '@image/mainSection/aboutCarousel/withDog.jpg';
 import one from '@image/mainSection/aboutCarousel/showcase.jpg';

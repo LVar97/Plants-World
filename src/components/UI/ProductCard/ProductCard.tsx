@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import clsx from 'clsx';
 import Button from 'antd/es/button/button';
 
-import '@app/styles/components/ui/productCard.scss';
+import '@app/scss/components/ui/productCard.scss';
 import { ReactComponent as HeartIcon } from '@image/icon/heart.svg';
 
 interface ProductCardProps {

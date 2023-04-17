@@ -1,7 +1,7 @@
 import React from 'react';
 
 import clsx from 'clsx';
-import '@app/styles/components/ui/button.scss';
+import '@app/scss/components/ui/button.scss';
 
 export enum ButtonType {
 	Link,

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import '@app/styles/components/ui/categoryCard.scss';
+import '@app/scss/components/ui/categoryCard.scss';
 
 interface CategoryCardProps {
 	title: string;

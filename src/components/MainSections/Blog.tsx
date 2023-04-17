@@ -7,7 +7,7 @@ import blogI from '@image/mainSection/blog-1.jpg';
 import blogII from '@image/mainSection/blog-2.jpg';
 import blogIII from '@image/mainSection/blog-3.jpg';
 
-import '@app/styles/components/blog.scss';
+import '@app/scss/components/blog.scss';
 
 const articles = [
 	{

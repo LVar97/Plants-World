@@ -2,7 +2,7 @@ import React from 'react';
 
 import { QUALITY_TEXT, DELIVERY_TEXT, SECURE_TEXT } from '@app/vendor/texts';
 
-import '@app/styles/components/advantages.scss';
+import '@app/scss/components/advantages.scss';
 import { cardSecurity, delivery, quarantee } from '@image/icon/index';
 
 const advantages = [

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import '@app/styles/components/ui/colorRadioGroup.scss';
+import '@app/scss/components/ui/colorRadioGroup.scss';
 
 interface ColorRadioProps {
 	items: Array<string>;

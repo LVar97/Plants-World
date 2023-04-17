@@ -2,7 +2,7 @@ import React from 'react';
 
 import { HEAD_TEXT } from '@app/vendor/texts';
 
-import '@app/styles/components/head.scss';
+import '@app/scss/components/head.scss';
 import head from '@image/mainSection/head.jpg';
 
 export const Head = () => {

@@ -11,7 +11,7 @@ import {
 	rightArrow, sun, globe, paw, drop, termo,
 } from '@image/icon/index';
 
-import '@app/styles/components/productPage.scss';
+import '@app/scss/components/productPage.scss';
 
 const goBack = -1;
 

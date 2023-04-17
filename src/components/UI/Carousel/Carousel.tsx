@@ -6,7 +6,7 @@ import { CarouselRef } from 'antd/es/carousel';
 import { Button, ButtonType } from '@app/components/UI/Button/Button';
 
 import { expandArrow } from '@image/icon/index';
-import '@app/styles/components/ui/carousel.scss';
+import '@app/scss/components/ui/carousel.scss';
 
 interface CarouselProps {
 	photos: Array<string>;

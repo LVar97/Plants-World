@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import clsx from 'clsx';
 
-import '@app/styles/components/header.scss';
+import '@app/scss/components/header.scss';
 import { Navigate } from '@app/components/Header/Navigate';
 import { ServiceNavigate } from '@app/components/Header/ServiceNavigate';
 

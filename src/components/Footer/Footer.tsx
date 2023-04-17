@@ -4,7 +4,7 @@ import clsx from 'clsx';
 import moment from 'moment';
 
 import { expandArrow } from '@image/icon/index';
-import '@app/styles/components/footer.scss';
+import '@app/scss/components/footer.scss';
 
 interface IDropListItem {
 	title: string;

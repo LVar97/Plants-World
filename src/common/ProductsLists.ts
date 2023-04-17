@@ -7,6 +7,7 @@ export const indoorList = [
 		image: 'https://images.unsplash.com/photo-1596547612397-1432a7a7d37d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1064&q=80',
 		title: 'Ficus lyrata Bambino',
 		cost: 50,
+		isFavorite: true,
 	},
 	{
 		id: 324,
@@ -14,6 +15,7 @@ export const indoorList = [
 		image: 'https://images.unsplash.com/photo-1597055181321-71de4e5ec627?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80',
 		title: 'Calathea lancifolia',
 		cost: 40,
+		isFavorite: false,
 	},
 	{
 		id: 325,
@@ -21,6 +23,7 @@ export const indoorList = [
 		image: 'https://images.unsplash.com/photo-1597055181321-71de4e5ec627?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80',
 		title: 'Calathea lancifolia',
 		cost: 40,
+		isFavorite: false,
 	},
 	{
 		id: 326,
@@ -28,6 +31,7 @@ export const indoorList = [
 		image: 'https://images.unsplash.com/photo-1597055181321-71de4e5ec627?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80',
 		title: 'Calathea lancifolia',
 		cost: 40,
+		isFavorite: false,
 	},
 ];
 
@@ -38,5 +42,6 @@ export const outdoorList = [
 		image: '',
 		title: '',
 		cost: 70,
+		isFavorite: false,
 	},
 ];

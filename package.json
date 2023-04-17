@@ -37,6 +37,7 @@
     "webpack-node-externals": "^3.0.0"
   },
   "dependencies": {
+    "@ant-design/icons": "^5.0.1",
     "@loadable/component": "^5.15.3",
     "@loadable/server": "^5.15.3",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.3",

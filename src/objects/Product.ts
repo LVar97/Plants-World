@@ -2,6 +2,9 @@ export interface IProduct {
 	id: number;
 	link: string;
 	image: string;
-	title: string;
+	name: string;
 	cost: number;
+	potColor?: string;
+	count?: number;
+	isFavorite: boolean;
 }

@@ -9,7 +9,7 @@ import { ReactComponent as HeartIcon } from '@image/icon/heart.svg';
 interface ProductCardProps {
 	id: number;
 	image: string;
-	title: string;
+	name: string;
 	cost: number;
 
 	isFavorite: boolean;
@@ -26,9 +26,9 @@ export const ProductCard: React.FC<ProductCardProps> = (props: ProductCardProps)
 				<HeartIcon className={clsx('product-card__like', like && '_active')} />
 			</div>
 			<Link to={`/product-page/${props.id}`} className="product-card__link">
-				<img src={props.image} alt={props.title} className="product-card__image" />
+				<img src={props.image} alt={props.name} className="product-card__image" />
 				<div className="product-card__text-block text-size_small">
-					<p className="product-card__title">{props.title}</p>
+					<p className="product-card__title">{props.name}</p>
 					<p className="product-card__cost">From {props.cost}$</p>
 				</div>
 				<Button

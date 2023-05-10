@@ -1,0 +1,26 @@
+@import '~@app/scss/variables.scss';
+
+.bag {
+	padding: $page-margin 0;
+
+	&__title {
+		text-align: center;
+		margin: 0 0 $page-margin 0;
+	}
+
+	&__action-block {
+		margin: $page-margin 0 2 * $page-margin;
+		display: flex;
+		justify-content: space-between;
+
+		span {
+			width: 100px;
+			margin-left: 10px;
+			display: inline-block;
+		}
+
+		button {
+			width: 30%;
+		}
+	}
+}

@@ -73,7 +73,7 @@ export const ProductPage = () => {
 				<Button
 					type="link"
 					onClick={() => navigate(goBack)}
-					className="product-page__back-btn text-size_small"
+					className="product-page__back-btn back-btn text-size_small"
 				>
 					<img src={rightArrow} alt="Go Back button" className="icon-margin" />
 				</Button>
@@ -108,7 +108,7 @@ export const ProductPage = () => {
 						</div>
 
 						<div className="product-page__action-block">
-							<p className="text-size_medium">${price}</p>
+							<p className="text-size_medium rounded-field">${price}</p>
 							<Button
 								shape="round"
 								type="primary"

@@ -15,6 +15,7 @@ import { MainPages } from '@app/pages/MainPages';
 import { Footer } from '@app/components/Footer/Footer';
 import { Catalog } from '@app/pages/Catalog';
 import { ProductPage } from '@app/pages/ProductPage';
+import { Bag } from '@app/pages/Bag';
 
 export const App: React.FC = () => (
 	<div>
@@ -34,6 +35,7 @@ export const App: React.FC = () => (
 						<Route path="/indoor-plant" element={<Catalog list={indoorList} title="Indoor Plans" />} />
 						<Route path="/outdoor-plant" element={<Catalog list={outdoorList} title="Outdoor Plans" />} />
 						<Route path="/product-page/:id" element={<ProductPage />} />
+						<Route path="/bag" element={<Bag />} />
 					</Routes>
 					<Footer />
 				</Layout>
